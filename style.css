@@ -2,3 +2,46 @@ body {
     background-image: url(assets/background.jpg);
     background-size: cover;
 }
+
+    .event-card {
+    position: relative;
+    width: 270px;
+    height: 320px; /* diperkecil */
+    border-radius: 15px;
+    overflow: hidden;
+    color: white;
+    background-size: cover;
+    background-position: center;
+  }
+
+  .event-overlay {
+    position: absolute;
+    bottom: 0;
+    padding: 15px;
+    width: 100%;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.85), rgba(0,0,0,0));
+  }
+
+  .event-title {
+    font-weight: 600;
+    font-size: 1.1rem;
+  }
+
+  .event-meta {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 0.75rem;
+    margin-top: 3px;
+  }
+
+  .event-buttons {
+    margin-top: 10px;
+  }
+
+  .event-buttons .btn {
+    margin-right: 6px;
+    border-radius: 20px;
+    font-size: 0.75rem;
+    padding: 4px 12px;
+  }
