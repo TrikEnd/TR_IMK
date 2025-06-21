@@ -45,3 +45,23 @@ body {
     font-size: 0.75rem;
     padding: 4px 12px;
   }
+
+  .navbar-custom {
+  background: rgba(255, 255, 255, 0.1); /* transparan */
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px); /* untuk Safari */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* opsional: bayangan lembut */
+}
+
+
+  .btn-blur {
+  background: rgba(255, 255, 255, 0.2); /* transparan */
+  backdrop-filter: blur(8px); /* efek blur */
+  -webkit-backdrop-filter: blur(8px); /* dukungan Safari */
+  border: none;
+  color: white;
+  font-size: 14px;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
