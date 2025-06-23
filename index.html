@@ -9,35 +9,40 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
   </head>
   <body>
+
+
     <!-- NAVBAR -->
     <nav class="navbar fixed-top navbar-expand-lg navbar-dark navbar-custom">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#">FTIfest</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse justify-content-center" id="navbarNavDropdown">
-          <ul class="navbar-nav">
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">Festival & Events</a>
-              <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                <li><a class="dropdown-item" href="#">Music Fest</a></li>
-                <li><a class="dropdown-item" href="#">Traditional Fest</a></li>
-              </ul>
-            </li>
-            <li class="nav-item"><a class="nav-link" href="#">Cart</a></li>
-            <li class="nav-item"><a class="nav-link" href="#">More Credit</a></li>
+  <div class="container-fluid">
+    <a class="navbar-brand" href="index.html">FTIFest</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" 
+      aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse justify-content-center" id="navbarNavDropdown">
+      <ul class="navbar-nav">
+        <li class="nav-item dropdown mx-3">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" 
+            data-bs-toggle="dropdown" aria-expanded="false">Festival & Events</a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <li><a class="dropdown-item" href="#">Music Fest</a></li>
+            <li><a class="dropdown-item" href="#">Traditional Fest</a></li>
           </ul>
-          <ul class="navbar-nav" style="left: 90%; position: absolute;">
-            <li class="nav-item">
-             <button type="button" class="btn-blur">
-                <img src="user.png" style="width: 13px; margin-bottom: 3px; margin-right: 5px;" alt="">My Account
-            </button>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
+        </li>
+        <li class="nav-item mx-3">
+          <a class="nav-link" href="#">Cart</a>
+        </li>
+        <li class="nav-item mx-3">
+          <a class="nav-link" href="morencredit.html">More Credit</a>
+        </li>
+      </ul>
+    </div>
+
+
+  </div>
+</nav>
+
 
 
     <!-- SPACING FOR FIXED NAVBAR -->
@@ -85,113 +90,115 @@
        <!-- MINI INFO & TICKET LIST -->
 <div class="container-fluid">
   <h6 class="text-white mb-3 ms-3">Mini Info & Tickets</h6>
-  <div class="scrolling-mini-card">
+  <div class="scrolling-mini-card-wrapper">
+    <div class="scrolling-mini-card">
 
-    <!-- Card 1 -->
-    <div class="scroll-card">
-      <div class="event-card" style="background-image: url('assets/view-futuristic-concert.jpg')">
-        <div class="event-overlay">
-          <div class="event-title">FTI FEST 2025</div>
-          <div class="event-meta"><i class="bi bi-calendar-event"></i> 29 FEBRUARI 2025</div>
-          <div class="event-meta"><i class="bi bi-geo-alt"></i> LAPANGAN SION</div>
-          <div class="event-buttons">
-            <button class="btn btn-outline-light">INFO</button>
-            <button class="btn btn-outline-light">TICKETS</button>
+      <!-- Card 1 -->
+      <div class="scroll-card">
+        <div class="event-card" style="background-image: url('assets/view-futuristic-concert.jpg')">
+          <div class="event-overlay">
+            <div class="event-title">FTI FEST 2025</div>
+            <div class="event-meta"><i class="bi bi-calendar-event"></i> 29 FEBRUARI 2025</div>
+            <div class="event-meta"><i class="bi bi-geo-alt"></i> LAPANGAN SION</div>
+            <div class="event-buttons">
+              <button class="btn btn-outline-light">INFO</button>
+              <button class="btn btn-outline-light">TICKETS</button>
+            </div>
           </div>
         </div>
       </div>
-    </div>
 
-    <!-- Card 2 -->
-    <div class="scroll-card">
-      <div class="event-card" style="background-image: url('assets/back-view-crowd-fans-watching-live-performance-music-concert-night-copy-space.jpg')">
-        <div class="event-overlay">
-          <div class="event-title">FTI FEST 2025</div>
-          <div class="event-meta"><i class="bi bi-calendar-event"></i> 21 AGUSTUS 2025</div>
-          <div class="event-meta"><i class="bi bi-geo-alt"></i> LAPANGAN SION</div>
-          <div class="event-buttons">
-            <button class="btn btn-outline-light">INFO</button>
-            <button class="btn btn-outline-light">TICKETS</button>
+      <!-- Card 2 -->
+      <div class="scroll-card">
+        <div class="event-card" style="background-image: url('assets/back-view-crowd-fans-watching-live-performance-music-concert-night-copy-space.jpg')">
+          <div class="event-overlay">
+            <div class="event-title">FTI FEST 2025</div>
+            <div class="event-meta"><i class="bi bi-calendar-event"></i> 21 AGUSTUS 2025</div>
+            <div class="event-meta"><i class="bi bi-geo-alt"></i> LAPANGAN SION</div>
+            <div class="event-buttons">
+              <button class="btn btn-outline-light">INFO</button>
+              <button class="btn btn-outline-light">TICKETS</button>
+            </div>
           </div>
         </div>
       </div>
-    </div>
 
-    <!-- Card 3 -->
-    <div class="scroll-card">
-      <div class="event-card" style="background-image: url('assets/event1.jpg')">
-        <div class="event-overlay">
-          <div class="event-title">CAMPUS EXPO</div>
-          <div class="event-meta"><i class="bi bi-calendar-event"></i> 5 MARET 2025</div>
-          <div class="event-meta"><i class="bi bi-geo-alt"></i> GEDUNG SERBAGUNA</div>
-          <div class="event-buttons">
-            <button class="btn btn-outline-light">DETAIL</button>
-            <button class="btn btn-outline-light">TICKETS</button>
+      <!-- Card 3 -->
+      <div class="scroll-card">
+        <div class="event-card" style="background-image: url('assets/pesta4.jpg')">
+          <div class="event-overlay">
+            <div class="event-title">CAMPUS EXPO</div>
+            <div class="event-meta"><i class="bi bi-calendar-event"></i> 5 MARET 2025</div>
+            <div class="event-meta"><i class="bi bi-geo-alt"></i> GEDUNG SERBAGUNA</div>
+            <div class="event-buttons">
+              <button class="btn btn-outline-light">DETAIL</button>
+              <button class="btn btn-outline-light">TICKETS</button>
+            </div>
           </div>
         </div>
       </div>
-    </div>
 
-    <!-- Card 4 -->
-    <div class="scroll-card">
-      <div class="event-card" style="background-image: url('assets/event2.jpg')">
-        <div class="event-overlay">
-          <div class="event-title">TECH DAY</div>
-          <div class="event-meta"><i class="bi bi-calendar-event"></i> 10 MEI 2025</div>
-          <div class="event-meta"><i class="bi bi-geo-alt"></i> AULA FTI</div>
-          <div class="event-buttons">
-            <button class="btn btn-outline-light">DETAIL</button>
-            <button class="btn btn-outline-light">TICKETS</button>
+      <!-- Card 4 -->
+      <div class="scroll-card">
+        <div class="event-card" style="background-image: url('assets/pesta5.jpg')">
+          <div class="event-overlay">
+            <div class="event-title">TECH DAY</div>
+            <div class="event-meta"><i class="bi bi-calendar-event"></i> 10 MEI 2025</div>
+            <div class="event-meta"><i class="bi bi-geo-alt"></i> AULA FTI</div>
+            <div class="event-buttons">
+              <button class="btn btn-outline-light">DETAIL</button>
+              <button class="btn btn-outline-light">TICKETS</button>
+            </div>
           </div>
         </div>
       </div>
-    </div>
 
-    <!-- Card 5 -->
-    <div class="scroll-card">
-      <div class="event-card" style="background-image: url('assets/event3.jpg')">
-        <div class="event-overlay">
-          <div class="event-title">FTI STARTUP</div>
-          <div class="event-meta"><i class="bi bi-calendar-event"></i> 8 JUNI 2025</div>
-          <div class="event-meta"><i class="bi bi-geo-alt"></i> HALL D KAMPUS</div>
-          <div class="event-buttons">
-            <button class="btn btn-outline-light">DETAIL</button>
-            <button class="btn btn-outline-light">TICKETS</button>
+      <!-- Card 5 -->
+      <div class="scroll-card">
+        <div class="event-card" style="background-image: url('assets/pesta6.jpg')">
+          <div class="event-overlay">
+            <div class="event-title">FTI STARTUP</div>
+            <div class="event-meta"><i class="bi bi-calendar-event"></i> 8 JUNI 2025</div>
+            <div class="event-meta"><i class="bi bi-geo-alt"></i> HALL D KAMPUS</div>
+            <div class="event-buttons">
+              <button class="btn btn-outline-light">DETAIL</button>
+              <button class="btn btn-outline-light">TICKETS</button>
+            </div>
           </div>
         </div>
       </div>
-    </div>
 
-    <!-- Card 6 -->
-    <div class="scroll-card">
-      <div class="event-card" style="background-image: url('assets/Z--oondAxsiBwUZ6_1722004788022_90f62658-f1b1-4b6f-8859-7dd7ae152e57.jpg_0_16871977400249543055.webp')">
-        <div class="event-overlay">
-          <div class="event-title">FTI FEST 2025</div>
-          <div class="event-meta"><i class="bi bi-calendar-event"></i> 14 DESEMBER 2025</div>
-          <div class="event-meta"><i class="bi bi-geo-alt"></i> LAPANGAN SION</div>
-          <div class="event-buttons">
-            <button class="btn btn-outline-light">INFO</button>
-            <button class="btn btn-outline-light">TICKETS</button>
+      <!-- Card 6 -->
+      <div class="scroll-card">
+        <div class="event-card" style="background-image: url('assets/Z--oondAxsiBwUZ6_1722004788022_90f62658-f1b1-4b6f-8859-7dd7ae152e57.jpg_0_16871977400249543055.webp')">
+          <div class="event-overlay">
+            <div class="event-title">FTI FEST 2025</div>
+            <div class="event-meta"><i class="bi bi-calendar-event"></i> 14 DESEMBER 2025</div>
+            <div class="event-meta"><i class="bi bi-geo-alt"></i> LAPANGAN SION</div>
+            <div class="event-buttons">
+              <button class="btn btn-outline-light">INFO</button>
+              <button class="btn btn-outline-light">TICKETS</button>
+            </div>
           </div>
         </div>
       </div>
-    </div>
 
-    <!-- Card 7 -->
-    <div class="scroll-card">
-      <div class="event-card" style="background-image: url('assets/Z--oondAxsiBwUZ6_1722004788022_90f62658-f1b1-4b6f-8859-7dd7ae152e57.jpg_0_16871977400249543055.webp')">
-        <div class="event-overlay">
-          <div class="event-title">FTI FEST 2025</div>
-          <div class="event-meta"><i class="bi bi-calendar-event"></i> 2 JANUARI 2025</div>
-          <div class="event-meta"><i class="bi bi-geo-alt"></i> LAPANGAN GOLGOTA</div>
-          <div class="event-buttons">
-            <button class="btn btn-outline-light">INFO</button>
-            <button class="btn btn-outline-light">TICKETS</button>
+      <!-- Card 7 -->
+      <div class="scroll-card">
+        <div class="event-card" style="background-image: url('assets/Z--oondAxsiBwUZ6_1722004788022_90f62658-f1b1-4b6f-8859-7dd7ae152e57.jpg_0_16871977400249543055.webp')">
+          <div class="event-overlay">
+            <div class="event-title">FTI FEST 2025</div>
+            <div class="event-meta"><i class="bi bi-calendar-event"></i> 2 JANUARI 2025</div>
+            <div class="event-meta"><i class="bi bi-geo-alt"></i> LAPANGAN GOLGOTA</div>
+            <div class="event-buttons">
+              <button class="btn btn-outline-light">INFO</button>
+              <button class="btn btn-outline-light">TICKETS</button>
+            </div>
           </div>
         </div>
       </div>
-    </div>
 
+    </div>
   </div>
 </div>
 
@@ -205,7 +212,7 @@
         <img src="assets/news3.jpg" class="news-card" alt="25">
       </div>
       <div class="coming-soon my-4">
-        <img src="assets/comingsoon.jpg" class="w-100 rounded-4" alt="Coming Soon">
+        <img src="assets/Z--oondAxsiBwUZ6_1722004788022_90f62658-f1b1-4b6f-8859-7dd7ae152e57.jpg_0_16871977400249543055.webp" class="w-100 rounded-4" alt="Coming Soon">
         <div class="overlay-text">FTI FEST 2025 IS COMING SOON</div>
       </div>
     </div>
@@ -235,16 +242,16 @@
 
     <!-- FOOTER -->
     <footer class="footer text-center py-4">
-      <h2 class="text-white">FTI<span class="fw-light">Fest</span></h2>
-      <div class="social-icons mt-2">
-        <i class="bi bi-discord"></i>
-        <i class="bi bi-whatsapp"></i>
-        <i class="bi bi-facebook"></i>
-        <i class="bi bi-twitter-x"></i>
-        <i class="bi bi-instagram"></i>
-        <i class="bi bi-youtube"></i>
-      </div>
-    </footer>
+  <h2 class="text-white">FTI<span class="fw-light">Fest</span></h2>
+  <div class="social-icons mt-2">
+    <i class="bi bi-discord"></i>
+    <i class="bi bi-whatsapp"></i>
+    <i class="bi bi-facebook"></i>
+    <i class="bi bi-twitter"></i>
+    <i class="bi bi-instagram"></i>
+    <i class="bi bi-youtube"></i>
+  </div>
+</footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous"></script>
   </body>
