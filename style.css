@@ -21,8 +21,6 @@ footer.footer {
   box-sizing: border-box;
 }
 
-
-
 .navbar-custom {
   color:#8987B6;
   background-color: rgba(255, 255, 255, 0); /* transparan gelap */
@@ -211,4 +209,51 @@ footer.footer {
   flex: 0 0 auto;
   width: 270px;
   scroll-snap-align: start;
+}
+
+/* SCROLL WRAPPER */
+.scrolling-mini-card-wrapper {
+  overflow-x: auto !important;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE 10+ */
+}
+
+.scrolling-mini-card-wrapper::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Edge */
+}
+
+/* CARD CONTAINER */
+.scrolling-mini-card {
+  display: flex;
+  gap: 1rem;
+  padding: 1rem;
+  scroll-snap-type: x mandatory;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE 10+ */
+}
+
+.scrolling-mini-card::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Edge */
+}
+
+/* INDIVIDUAL CARD */
+.scroll-card {
+  flex: 0 0 auto;
+  scroll-snap-align: start;
+}
+
+.event-card {
+  position: relative;
+  width: 270px;
+  height: 320px;
+  border-radius: 15px;
+  overflow: hidden;
+  color: white;
+  background-size: cover;
+  background-position: center;
+  margin-bottom: 2rem;
+  flex-shrink: 0;
 }
