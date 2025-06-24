@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Profile Page</title>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<style>
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #080e27;
+  color: #a59ce3;
+  position: relative;
+  overflow: hidden;
+  height: 100vh;
+}
+.container {
+  position: relative;
+  text-align: center;
+  padding: 60px 20px;
+}
+.back-button {
+        position: absolute;
+        top: 20px;
+        left: 20px;
+        background: rgba(255, 255, 255, 0.1);
+        border: 1px solid #ccc;
+        border-radius: 50%;
+        width: 40px;
+        height: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #ccc;
+        text-decoration: none;
+      }
+.profile-area {
+  position: relative;
+  z-index: 1;
+}
+.profile-pic {
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border: 5px solid #a59ce3;
+}
+.hello {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin: 15px 0 5px 0;
+}
+.name {
+  font-size: 1.3rem;
+}
+.nim {
+  font-size: 1.1rem;
+}
+.circle {
+  position: absolute;
+  border-radius: 50%;
+  background-color: #1f1c57;
+}
+.circle1 {
+  top: -200px;
+  right: -150px;
+  width: 400px;
+  height: 400px;
+}
+.circle2 {
+  bottom: -180px;
+  left: -160px;
+  width: 350px;
+  height: 350px;
+}
+</style>
+</head>
+<body>
+<!-- Lingkaran background -->
+<div class="circle circle1"></div>
+<div class="circle circle2"></div>
+
+<!-- Konten Utama -->
+<div class="container">
+  <a href="index.html" class="back-button">&#8592;</a> 
+  <div class="profile-area">
+    <img src="/assets/jenna.jpeg" alt="Profile Picture" class="profile-pic">
+    <div class="hello">HELLO</div>
+    <div class="name">Vinessya Sundjaya</div>
+    <div class="nim">NIM: 672021215</div>
+  </div>
+</div>
+</body>
+</html>
