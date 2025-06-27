@@ -9,58 +9,52 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
   </head>
   <body>
-
-
+    <div class="main-content">
     <!-- NAVBAR -->
     <nav class="navbar fixed-top navbar-expand-lg navbar-dark navbar-custom">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="index.html">FTIFest</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" 
-      aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">FTIFest</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" 
+          aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
 
-    <div class="collapse navbar-collapse justify-content-center" id="navbarNavDropdown">
-      <ul class="navbar-nav">
-        <li class="nav-item dropdown mx-3">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" 
-            data-bs-toggle="dropdown" aria-expanded="false">Festival & Events</a>
-          <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-            <li><a class="dropdown-item" href="#">Music Fest</a></li>
-            <li><a class="dropdown-item" href="#">Traditional Fest</a></li>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav mx-auto me-3">
+            <li class="nav-item dropdown mx-3">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" 
+                data-bs-toggle="dropdown" aria-expanded="false">Festival & Events</a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <li><a class="dropdown-item" href="#">Music Fest</a></li>
+                <li><a class="dropdown-item" href="#">Traditional Fest</a></li>
+              </ul>
+            </li>
+            <li class="nav-item mx-3">
+              <a class="nav-link" href="#">Cart</a>
+            </li>
+            <li class="nav-item mx-3">
+              <a class="nav-link" href="morencredit.html">More Credit</a>
+            </li>
           </ul>
-        </li>
-        <li class="nav-item mx-3">
-          <a class="nav-link" href="#">Cart</a>
-        </li>
-        <li class="nav-item mx-3">
-          <a class="nav-link" href="morencredit.html">More Credit</a>
-        </li>
-      </ul>
-    </div>
-<ul class="navbar-nav ms-auto">
-      <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle d-flex align-items-center" href="account.html" id="profileDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-          <img src="assets/Me.jpg" alt="Profile" style="width: 40px; height: 40px; border-radius: 50%;">
-        </a>
-        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="profileDropdown">
-          <li><a class="dropdown-item" href="account.html">My Profile</a></li>
-          <li><hr class="dropdown-divider"></li>
-          <li><a class="dropdown-item" href="logout.html">Logout</a></li>
-        </ul>
-      </li>
-    </ul>
-    
-  </div>
-</nav>
-
-  </div>
-</nav>
-
-
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle d-flex align-items-center" href="account.html" id="profileDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <img src="assets/Me.jpg" alt="Profile" style="width: 40px; height: 40px; border-radius: 50%;">
+              </a>
+              <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="profileDropdown">
+                <li><a class="dropdown-item" href="account.html">My Profile</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="logout.html">Logout</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
 
     <!-- SPACING FOR FIXED NAVBAR -->
-    <div style="margin-top: 10px;"></div>
+    <div style="margin-top: 80px;"></div>
+
 
     <!-- CAROUSEL -->
     <div class="container d-flex justify-content-center">
@@ -72,21 +66,25 @@
         class="carousel slide"
         data-bs-ride="carousel"
         data-bs-interval="3000"
-        style="width: 75vw; margin-top: 100px">
+        style="width: 75vw; margin-top: 50px">
         <div class="carousel-indicators">
           <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
           <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
           <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
         </div>
         <div class="carousel-inner rounded-4">
           <div class="carousel-item active">
-            <img src="assets/back-view-crowd-fans-watching-live-performance-music-concert-night-copy-space.jpg" class="d-block w-100" style="height: 300px; object-fit: cover" alt="..." />
+            <img src="assets/corousel1.jpg" class="d-block w-100" style="height: 300px; object-fit: cover" alt="..." />
           </div>
           <div class="carousel-item">
-            <img src="assets/view-futuristic-concert.jpg" class="d-block w-100" style="height: 300px; object-fit: cover" alt="..." />
+            <img src="assets/corousel2.jpg" class="d-block w-100" style="height: 300px; object-fit: cover" alt="..." />
           </div>
           <div class="carousel-item">
-            <img src="assets/Z--oondAxsiBwUZ6_1722004788022_90f62658-f1b1-4b6f-8859-7dd7ae152e57.jpg_0_16871977400249543055.webp" class="d-block w-100" style="height: 300px; object-fit: cover" alt="..." />
+            <img src="assets/corousel3.jpg" class="d-block w-100" style="height: 300px; object-fit: cover" alt="..." />
+          </div>
+           <div class="carousel-item">
+            <img src="assets/corousel4.jpg" class="d-block w-100" style="height: 300px; object-fit: cover" alt="..." />
           </div>
         </div>
         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
@@ -103,19 +101,19 @@
    <!-- MINI INFO & TICKET LIST -->
        <!-- MINI INFO & TICKET LIST -->
 <div class="containerfluid">
-  <h6 class="text-white mb-3 ms-3">Mini Info & Tickets</h6>
+  <h2 class="text-white mb-3 ms-3">Mini Info & Tickets</h2>
   <div class="scrolling-mini-card-wrapper">
     <div class="scrolling-mini-card">
 
       <!-- Card 1 -->
       <div class="scroll-card">
-        <div class="event-card" style="background-image: url('assets/view-futuristic-concert.jpg')">
+        <div class="event-card" style="background-image: url('assets/pesta10.png')">
           <div class="event-overlay">
             <div class="event-title">FTI FEST 2025</div>
             <div class="event-meta"><i class="bi bi-calendar-event"></i> 29 FEBRUARI 2025</div>
             <div class="event-meta"><i class="bi bi-geo-alt"></i> LAPANGAN SION</div>
             <div class="event-buttons">
-              <button class="btn btn-outline-light">INFO</button>
+            <a href="info1.html" class="btn btn-outline-light">INFO</a>
               <button class="btn btn-outline-light">TICKETS</button>
             </div>
           </div>
@@ -124,13 +122,13 @@
 
       <!-- Card 2 -->
       <div class="scroll-card">
-        <div class="event-card" style="background-image: url('assets/back-view-crowd-fans-watching-live-performance-music-concert-night-copy-space.jpg')">
+        <div class="event-card" style="background-image: url('assets/pesta7.png')">
           <div class="event-overlay">
             <div class="event-title">FTI FEST 2025</div>
             <div class="event-meta"><i class="bi bi-calendar-event"></i> 21 AGUSTUS 2025</div>
             <div class="event-meta"><i class="bi bi-geo-alt"></i> LAPANGAN SION</div>
             <div class="event-buttons">
-              <button class="btn btn-outline-light">INFO</button>
+              <a href="info2.html" class="btn btn-outline-light">INFO</a>
               <button class="btn btn-outline-light">TICKETS</button>
             </div>
           </div>
@@ -169,7 +167,7 @@
 
       <!-- Card 5 -->
       <div class="scroll-card">
-        <div class="event-card" style="background-image: url('assets/pesta6.jpg')">
+        <div class="event-card" style="background-image: url('assets/pesta2.jpg')">
           <div class="event-overlay">
             <div class="event-title">FTI STARTUP</div>
             <div class="event-meta"><i class="bi bi-calendar-event"></i> 8 JUNI 2025</div>
@@ -184,7 +182,7 @@
 
       <!-- Card 6 -->
       <div class="scroll-card">
-        <div class="event-card" style="background-image: url('assets/Z--oondAxsiBwUZ6_1722004788022_90f62658-f1b1-4b6f-8859-7dd7ae152e57.jpg_0_16871977400249543055.webp')">
+        <div class="event-card" style="background-image: url('assets/pesta9.jpg')">
           <div class="event-overlay">
             <div class="event-title">FTI FEST 2025</div>
             <div class="event-meta"><i class="bi bi-calendar-event"></i> 14 DESEMBER 2025</div>
@@ -199,7 +197,7 @@
 
       <!-- Card 7 -->
       <div class="scroll-card">
-        <div class="event-card" style="background-image: url('assets/Z--oondAxsiBwUZ6_1722004788022_90f62658-f1b1-4b6f-8859-7dd7ae152e57.jpg_0_16871977400249543055.webp')">
+        <div class="event-card" style="background-image: url('assets/pesta6.jpg')">
           <div class="event-overlay">
             <div class="event-title">FTI FEST 2025</div>
             <div class="event-meta"><i class="bi bi-calendar-event"></i> 2 JANUARI 2025</div>
@@ -219,21 +217,36 @@
 
     <!-- NEWS AND UPDATES -->
     <div class="container my-5">
-      <h5 class="text-white mb-3">News and updates</h5>
-      <div class="d-flex gap-3 overflow-auto">
-        <img src="assets/news1.jpg" class="news-card" alt="FTI">
-        <img src="assets/news2.jpg" class="news-card" alt="FEST">
-        <img src="assets/news3.jpg" class="news-card" alt="25">
-      </div>
-      <div class="coming-soon my-4">
-        <img src="assets/Z--oondAxsiBwUZ6_1722004788022_90f62658-f1b1-4b6f-8859-7dd7ae152e57.jpg_0_16871977400249543055.webp" class="w-100 rounded-4" alt="Coming Soon">
-        <div class="overlay-text">FTI FEST 2025 IS COMING SOON</div>
-      </div>
+    <div class="news-section container my-5">
+    <h2 class="text-white mb-4">News and Updates</h2>
+
+  <div class="d-flex flex-wrap gap-3 justify-content-center">
+    <!-- Card 1 -->
+    <div class="news-card" style="background-image: url('assets/FTI.jpg');">
+      <div class="overlay-text">FTI</div>
     </div>
+
+    <!-- Card 2 -->
+    <div class="news-card" style="background-image: url('assets/FEST.jpg');">
+      <div class="overlay-text">FEST</div>
+    </div>
+
+    <!-- Card 3 -->
+    <div class="news-card" style="background-image: url('assets/25.jpg');">
+      <div class="overlay-text">25</div>
+    </div>
+  </div>
+
+  <!-- Card Besar -->
+  <div class="news-card-large mt-4" style="background-image: url('assets/Z--oondAxsiBwUZ6_1722004788022_90f62658-f1b1-4b6f-8859-7dd7ae152e57.jpg_0_16871977400249543055.webp');">
+    <div class="overlay-text-large">FTI FEST 2025<br>IS COMING SOON</div>
+  </div>
+</div>
+
 
     <!-- THE LIST -->
     <div class="container my-5">
-  <h6 class="text-white mb-3">The List</h6>
+  <h2 class="text-white mb-3">The List</h2>
   <div class="d-flex gap-3 overflow-auto">
     
     <div class="card-artist text-center">
@@ -246,46 +259,45 @@
 
         <div class="card-artist text-center">
       <div class="img-wrapper">
-        <img src="assets/pesta2.jpg" class="artist-img" alt="MR.X">
+        <img src="assets/pesta1.jpg" class="artist-img" alt="MR.X">
     <span class="play-btn"><i class="bi bi-play-fill"></i></span>
       </div>
-      <p class="artist-text">MR.X<br>FTI FEST 25<br>2 Januari</p>
+      <p class="artist-text">DJ UHUY<br>FTI FEST 25<br>8 Juni</p>
     </div>
     <div class="card-artist text-center">
       <div class="img-wrapper">
-        <img src="assets/pesta2.jpg" class="artist-img" alt="MR.X">
+        <img src="assets/pesta3.jpg" class="artist-img" alt="MR.X">
     <span class="play-btn"><i class="bi bi-play-fill"></i></span>
       </div>
-      <p class="artist-text">MR.X<br>FTI FEST 25<br>2 Januari</p>
+      <p class="artist-text">WINDUT<br>FTI FEST 25<br>15 Februari</p>
     </div>
     <div class="card-artist text-center">
       <div class="img-wrapper">
-        <img src="assets/pesta2.jpg" class="artist-img" alt="MR.X">
+        <img src="assets/pesta4.jpg" class="artist-img" alt="MR.X">
     <span class="play-btn"><i class="bi bi-play-fill"></i></span>
       </div>
-      <p class="artist-text">MR.X<br>FTI FEST 25<br>2 Januari</p>
+      <p class="artist-text">DAMIAN<br>FTI FEST 25<br>20 Mei</p>
     </div>
     <div class="card-artist text-center">
       <div class="img-wrapper">
-        <img src="assets/pesta2.jpg" class="artist-img" alt="MR.X">
+        <img src="assets/pesta5.jpg" class="artist-img" alt="MR.X">
     <span class="play-btn"><i class="bi bi-play-fill"></i></span>
       </div>
-      <p class="artist-text">MR.X<br>FTI FEST 25<br>2 Januari</p>
+      <p class="artist-text">SAHNO<br>FTI FEST 25<br>11 Maret</p>
     </div>
     <div class="card-artist text-center">
       <div class="img-wrapper">
-        <img src="assets/pesta2.jpg" class="artist-img" alt="MR.X">
+        <img src="assets/pesta6.jpg" class="artist-img" alt="MR.X">
     <span class="play-btn"><i class="bi bi-play-fill"></i></span>
       </div>
-      <p class="artist-text">MR.X<br>FTI FEST 25<br>2 Januari</p>
+      <p class="artist-text">KANO<br>FTI FEST 25<br>29 Juli</p>
     </div>
 
+   </div>
   </div>
-</div>
+ </div>
 
-
-
-    <!-- FOOTER -->
+ <!-- FOOTER -->
     <footer class="footer text-center py-4">
   <h2 class="text-white">FTI<span class="fw-light">Fest</span></h2>
   <div class="social-icons mt-2">
@@ -299,5 +311,6 @@
 </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous"></script>
+
   </body>
 </html>
