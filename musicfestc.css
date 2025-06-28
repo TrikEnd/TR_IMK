@@ -92,3 +92,77 @@ font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 margin-top: 130px;
 font-size: 20px;
 }
+
+/* ================= ARTIST CARD ================= */
+.artist-img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 20px;
+}
+
+.card-artist {
+  background: rgba(0, 0, 0, 0.4);
+  border-radius: 15px;
+  padding: 10px;
+  min-width: 180px;
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  flex-shrink: 0;
+}
+
+.artist-text{
+color: rgba(0, 0, 50, 0.7);
+font-weight: bold;
+}
+
+.card-artist .img-wrapper {
+  position: relative;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.card-artist .artist-img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.card-artist .play-btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 50px;
+  height: 50px;
+  background-color: rgba(0, 0, 0, 0.6);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 22px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.5);
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  cursor: pointer;
+}
+.card-artist:hover{
+  transform: scale(1.02);
+}
+.card-artist .play-btn:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+  transform: translate(-50%, -50%) scale(1.1);
+}
+.container.my-5{
+  margin-left: 130px;
+}
+
+.container.my-5 .d-flex.overflow-auto {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.container.my-5 .d-flex.overflow-auto::-webkit-scrollbar {
+  display: none;
+}
