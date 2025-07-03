@@ -29,6 +29,11 @@
 
 
     /* ================= NAVBAR ================= */
+    .navbar-brand{
+      font-size: 20px;
+      font-weight: bold;
+    }
+
     .navbar-custom {
       display: flex;
       align-items: center;
@@ -40,6 +45,7 @@
       border-bottom: 1px solid rgba(255, 255, 255, 0.1);
       z-index: 999;
     }
+
 
     .dropdown-menu {
       color: #8987B6;
@@ -55,7 +61,7 @@
 
     .dropdown-menu .dropdown-item:hover,
     .dropdown-menu .dropdown-item:focus {
-      background-color: #444;
+      background-color: #5f5d5d;
       color: white;
     }
 
@@ -86,7 +92,7 @@
    <!-- NAVBAR -->
     <nav class="navbar fixed-top navbar-expand-lg navbar-dark navbar-custom">
       <div class="container-fluid">
-        <a class="navbar-brand" href="../index.html">FTIFest</a>
+        <a class="navbar-brand" href="/index.html">FTIFest</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" 
           aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -98,32 +104,35 @@
               <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" 
                 data-bs-toggle="dropdown" aria-expanded="false">Festival & Events</a>
               <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                <li><a class="dropdown-item" href="../musicfest.html">Music Fest</a></li>
-                <li><a class="dropdown-item" href="../tradfest.html">Traditional Fest</a></li>
+                <li><a class="dropdown-item" href="/musicfest.html">Music Fest</a></li>
+                <li><a class="dropdown-item" href="/tradfest.html">Traditional Fest</a></li>
               </ul>
             </li>
             <li class="nav-item mx-3">
-              <a class="nav-link" href="../cart.html">Cart</a>
+              <a class="nav-link" href="/cart.html">Cart</a>
             </li>
             <li class="nav-item mx-3">
-              <a class="nav-link" href="../morencredit.html">More Credit</a>
+              <a class="nav-link" href="/morencredit.html">More Credit</a>
             </li>
           </ul>
           <ul class="navbar-nav ms-auto">
             <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle d-flex align-items-center" href="../user/account.html" id="profileDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                <img src="../assets/jenna.jpeg" alt="Profile" style="width: 40px; height: 40px; border-radius: 50%;">
+              <a class="nav-link dropdown-toggle d-flex align-items-center" href="/user/account.html" id="profileDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <img src="/assets/jenna.jpeg" alt="Profile" style="width: 40px; height: 40px; border-radius: 50%;">
               </a>
               <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="profileDropdown">
-                <li><a class="dropdown-item" href="../user/account.html">My Profile</a></li>
+                <li><a class="dropdown-item" href="/user/account.html">My Profile</a></li>
                 <li><hr class="dropdown-divider"></li>
-                <li><a class="dropdown-item" href="../account/logout.html">Logout</a></li>
+                <li><a class="dropdown-item" href="/account/logout.html">Logout</a></li>
               </ul>
             </li>
           </ul>
         </div>
       </div>
     </nav>
+
+    <!-- SPACING FOR FIXED NAVBAR -->
+    <div style="margin-top: 80px;"></div>
     
     
 
