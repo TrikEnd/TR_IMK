@@ -193,16 +193,15 @@ footer.footer {
 
 /* ================= NEWS ================= */
 .news-card {
-  width: 300px; /* default untuk desktop */
-  height: 400px;
   background-size: cover;
   background-position: center;
   border-radius: 20px;
   position: relative;
+  display: flex;
+  gap: 20px;
   flex-shrink: 0;
-  margin: 10px; /* biar ada jarak antar kartu */
-  box-sizing: border-box;
 }
+
 
 .overlay-text {
   position: absolute;
@@ -223,7 +222,6 @@ footer.footer {
   background-position: center;
   border-radius: 20px;
   position: relative;
-  margin-top: 30px;
 }
 
 .overlay-text-large {
@@ -234,29 +232,6 @@ footer.footer {
   font-weight: bold;
   font-size: 1.8rem;
   text-shadow: 1px 1px 6px black;
-}
-
-/* ✅ Tambahkan ini agar layout responsif di HP */
-@media (max-width: 768px) {
-  .news-card {
-    width: 100% !important;
-    height: 250px;
-    margin: 10px 0;
-  }
-
-  .overlay-text {
-    font-size: 1.2rem;
-  }
-
-  .news-card-large {
-    height: 200px;
-  }
-
-  .overlay-text-large {
-    font-size: 1.4rem;
-    bottom: 20px;
-    left: 20px;
-  }
 }
 
 
