@@ -21,6 +21,11 @@ html, body {
 
 
 /* ================= NAVBAR ================= */
+.navbar-brand{
+  font-size: 20px;
+  font-weight: bold;
+}
+
 .navbar-custom {
   display: flex;
   align-items: center;

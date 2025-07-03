@@ -23,31 +23,39 @@ footer.footer {
   box-sizing: border-box;
 }
 
-.navbar-custom {
-  color:#8987B6;
-  background-color: rgba(255, 255, 255, 0); /* transparan gelap */
-  backdrop-filter: blur(20px);          /* efek blur */
-  -webkit-backdrop-filter: blur(10px); /* untuk Safari */
-  border-bottom: 1px solid rgba(255, 255, 255, 0.1); /* opsional, garis bawah halus */
+.navbar-brand{
+  font-size: 20px;
+  font-weight: bold;
 }
+
+.navbar-custom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  background-color: rgba(0, 0, 0, 0.4);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  z-index: 999;
+}
+
 
 .dropdown-menu {
-  color:#8987B6;
-  background-color: rgba(255, 255, 255, 0); /* transparan gelap */
-  backdrop-filter: blur(20px);          /* efek blur */
-  -webkit-backdrop-filter: blur(10px); /* untuk Safari */
-  border-bottom: 1px solid rgba(255, 255, 255, 0.1); /* opsional, garis bawah halus */
+  color: #8987B6;
+  background-color: rgba(255, 255, 255, 0);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 
-/* Warna teks dropdown item */
 .dropdown-menu .dropdown-item {
-  color: #eee; /* warna teks terang supaya kontras */
+  color: #eee;
 }
 
-/* Warna teks saat hover / focus */
 .dropdown-menu .dropdown-item:hover,
 .dropdown-menu .dropdown-item:focus {
-  background-color: #444; /* warna hover lebih terang dari background */
+  background-color: #5f5d5d;
   color: white;
 }
 
@@ -94,7 +102,6 @@ margin-top: 130px;
 font-size: 20px;
 }
 
-/* ================= ARTIST CARD ================= */
 .artist-img {
   width: 150px;
   height: 150px;
@@ -148,16 +155,10 @@ font-weight: bold;
   transition: background-color 0.3s ease, transform 0.3s ease;
   cursor: pointer;
 }
-.card-artist:hover{
-  transform: scale(1.02);
-}
+
 .card-artist .play-btn:hover {
   background-color: rgba(255, 255, 255, 0.3);
   transform: translate(-50%, -50%) scale(1.1);
-}
- .container.my-5{
-  margin-left: 90px;
-
 }
 
 .container.my-5 .d-flex.overflow-auto {
