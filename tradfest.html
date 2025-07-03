@@ -68,7 +68,7 @@
  <!-- THE LIST -->
     <div class="container my-5">
   <h2 class="text-white mb-3">The List</h2>
-  <div class="d-flex gap-3 overflow-auto">
+  <div class="d-flex gap-3 overflow-auto" id="artist-scroll">
     
     <div class="card-artist text-center">
       <div class="img-wrapper">
@@ -134,5 +134,38 @@
     <i class="bi bi-youtube"></i>
   </div>
 </footer>
+
+<script>
+  const slider = document.getElementById('artist-scroll');
+  let isDown = false;
+  let startX;
+  let scrollLeft;
+
+  slider.addEventListener('mousedown', (e) => {
+    isDown = true;
+    slider.classList.add('active');
+    startX = e.pageX - slider.offsetLeft;
+    scrollLeft = slider.scrollLeft;
+  });
+
+  slider.addEventListener('mouseleave', () => {
+    isDown = false;
+    slider.classList.remove('active');
+  });
+
+  slider.addEventListener('mouseup', () => {
+    isDown = false;
+    slider.classList.remove('active');
+  });
+
+  slider.addEventListener('mousemove', (e) => {
+    if (!isDown) return;
+    e.preventDefault();
+    const x = e.pageX - slider.offsetLeft;
+    const walk = (x - startX) * 1.5; // Semakin tinggi nilainya, semakin cepat geser
+    slider.scrollLeft = scrollLeft - walk;
+  });
+</script>
+
  </body>
 </html>

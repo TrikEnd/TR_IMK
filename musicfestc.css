@@ -2,7 +2,7 @@ html, body {
   background-image: url(assets/background.jpg);
   background-size: cover;
   background-repeat: no-repeat; 
-  color: #8987B6;
+  color: #ffffff;
   height: 100vh;
   margin: 0;
   padding: 0;
@@ -53,7 +53,7 @@ footer.footer {
 
 h1{
 text-align: center;
-color: #8987B6;
+color: #ffffff;
 font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 margin-top: 130px;
 font-size: 50px;
@@ -112,7 +112,7 @@ font-size: 20px;
 }
 
 .artist-text{
-color: rgba(0, 0, 50, 0.7);
+color: rgba(255, 255, 255, 0.7);
 font-weight: bold;
 }
 
@@ -165,4 +165,13 @@ font-weight: bold;
 
 .container.my-5 .d-flex.overflow-auto::-webkit-scrollbar {
   display: none;
+}
+
+#artist-scroll {
+  cursor: grab;
+  user-select: none; /* Supaya teks tidak ikut terseleksi saat drag */
+}
+
+#artist-scroll.active {
+  cursor: grabbing;
 }
