@@ -192,79 +192,68 @@ footer.footer {
 }
 
 /* ================= NEWS ================= */
-/* Container kartu kecil */
-.card-wrapper {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 20px;
-  padding: 0 16px;
-  box-sizing: border-box;
-}
-
-/* Kartu kecil */
 .news-card {
-  width: 300px;
+  width: 300px; /* default untuk desktop */
   height: 400px;
   background-size: cover;
   background-position: center;
   border-radius: 20px;
   position: relative;
-  flex: 0 0 auto;
+  flex-shrink: 0;
+  margin: 10px; /* biar ada jarak antar kartu */
+  box-sizing: border-box;
 }
 
-/* Teks tengah */
 .overlay-text {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  color: #fff;
+  color: #ffffff;
   font-weight: bold;
   font-size: 1.5rem;
   text-shadow: 1px 1px 5px black;
   text-align: center;
 }
 
-/* Kartu besar */
 .news-card-large {
-  width: calc(100% - 32px);
-  margin: 20px auto 0;
-  height: 300px;
+  width: 100%;
+  height: 250px;
   background-size: cover;
   background-position: center;
   border-radius: 20px;
   position: relative;
+  margin-top: 30px;
 }
 
-/* Teks besar */
 .overlay-text-large {
   position: absolute;
   bottom: 30px;
   left: 30px;
-  color: #fff;
+  color: #ffffff;
   font-weight: bold;
   font-size: 1.8rem;
   text-shadow: 1px 1px 6px black;
 }
 
-/* === Responsive Mobile === */
+/* ✅ Tambahkan ini agar layout responsif di HP */
 @media (max-width: 768px) {
   .news-card {
-    width: 100%;
+    width: 100% !important;
     height: 250px;
-  }
-
-  .news-card-large {
-    height: 200px;
+    margin: 10px 0;
   }
 
   .overlay-text {
     font-size: 1.2rem;
   }
 
+  .news-card-large {
+    height: 200px;
+  }
+
   .overlay-text-large {
-    font-size: 1.3rem;
+    font-size: 1.4rem;
     bottom: 20px;
     left: 20px;
   }
