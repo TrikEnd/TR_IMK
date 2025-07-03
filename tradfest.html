@@ -15,20 +15,21 @@
     <nav class="navbar fixed-top navbar-expand-lg navbar-dark navbar-custom">
       <div class="container-fluid">
         <a class="navbar-brand" href="index.html">FTIFest</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" 
+          aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
 
-        <div class="collapse navbar-collapse justify-content-center" id="navbarNavDropdown">
-          <ul class="navbar-nav">
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav mx-auto me-3">
             <li class="nav-item dropdown mx-3">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false"> Festival & Events </a>
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" 
+                data-bs-toggle="dropdown" aria-expanded="false">Festival & Events</a>
               <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                 <li><a class="dropdown-item" href="musicfest.html">Music Fest</a></li>
                 <li><a class="dropdown-item" href="tradfest.html">Traditional Fest</a></li>
               </ul>
             </li>
-
             <li class="nav-item mx-3">
               <a class="nav-link" href="cart.html">Cart</a>
             </li>
@@ -36,22 +37,21 @@
               <a class="nav-link" href="morencredit.html">More Credit</a>
             </li>
           </ul>
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle d-flex align-items-center" href="user/account.html" id="profileDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <img src="assets/jenna.jpeg" alt="Profile" style="width: 40px; height: 40px; border-radius: 50%;">
+              </a>
+              <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="profileDropdown">
+                <li><a class="dropdown-item" href="user/account.html">My Profile</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="account/logout.html">Logout</a></li>
+              </ul>
+            </li>
+          </ul>
         </div>
-    <ul class="navbar-nav ms-auto">
-      <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle d-flex align-items-center" href="account.html" id="profileDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-          <img src="assets/jenna.jpeg" alt="Profile" style="width: 40px; height: 40px; border-radius: 50%;">
-        </a>
-        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="profileDropdown">
-          <li><a class="dropdown-item" href="account.html">My Profile</a></li>
-          <li><hr class="dropdown-divider"></li>
-          <li><a class="dropdown-item" href="logout.html">Logout</a></li>
-        </ul>
-      </li>
-    </ul>
-    
-  </div>
-</nav>
+      </div>
+    </nav>
 
     <!-- SPACING FOR FIXED NAVBAR -->
     <div style="margin-top: 80px;"></div>  
@@ -65,61 +65,73 @@
   <img src="assets/tradfestlong1.jpg" alt="Lentera" class="music-card">
 </div>
 
- <!-- THE LIST -->
+   <!-- THE LIST -->
     <div class="container my-5">
   <h2 class="text-white mb-3">The List</h2>
-  <div class="d-flex gap-3 overflow-auto" id="artist-scroll">
+  <div class="d-flex gap-3 overflow-auto " id="artist-scroll">
     
     <div class="card-artist text-center">
       <div class="img-wrapper">
-        <img src="assets/tradfest5.jpg" class="artist-img" alt="MR.X">
+        <img src="assets/pesta2.jpg" class="artist-img" alt="MR.X">
     <span class="play-btn"><i class="bi bi-play-fill"></i></span>
       </div>
-      <p class="artist-text">Tari Topeng<br>FTI FEST 25<br>2 Januari</p>
+      <p class="artist-text">MR.X<br>FTI FEST 25<br>2 Januari</p>
     </div>
 
         <div class="card-artist text-center">
       <div class="img-wrapper">
-        <img src="assets/tradfest3.jpg" class="artist-img" alt="MR.X">
+        <img src="assets/pesta1.jpg" class="artist-img" alt="MR.X">
     <span class="play-btn"><i class="bi bi-play-fill"></i></span>
       </div>
-      <p class="artist-text">Kecak<br>FTI FEST 25<br>8 Juni</p>
+      <p class="artist-text">DJ UHUY<br>FTI FEST 25<br>8 Juni</p>
     </div>
     <div class="card-artist text-center">
       <div class="img-wrapper">
-        <img src="assets/tradfest6.jpg" class="artist-img" alt="MR.X">
+        <img src="assets/pesta3.jpg" class="artist-img" alt="MR.X">
     <span class="play-btn"><i class="bi bi-play-fill"></i></span>
       </div>
-      <p class="artist-text">Lentera<br>FTI FEST 25<br>15 Februari</p>
+      <p class="artist-text">WINDUT<br>FTI FEST 25<br>15 Februari</p>
     </div>
     <div class="card-artist text-center">
       <div class="img-wrapper">
-        <img src="assets/tradfest7.jpeg" class="artist-img" alt="MR.X">
+        <img src="assets/pesta4.jpg" class="artist-img" alt="MR.X">
     <span class="play-btn"><i class="bi bi-play-fill"></i></span>
       </div>
-      <p class="artist-text">Tari Endel<br>FTI FEST 25<br>20 Mei</p>
+      <p class="artist-text">DAMIAN<br>FTI FEST 25<br>20 Mei</p>
     </div>
     <div class="card-artist text-center">
       <div class="img-wrapper">
-        <img src="assets/tradfest5.jpg" class="artist-img" alt="MR.X">
+        <img src="assets/pesta5.jpg" class="artist-img" alt="MR.X">
     <span class="play-btn"><i class="bi bi-play-fill"></i></span>
       </div>
-      <p class="artist-text">Pentas Drama Budaya<br>FTI FEST 25<br>11 Maret</p>
+      <p class="artist-text">SAHNO<br>FTI FEST 25<br>11 Maret</p>
     </div>
     <div class="card-artist text-center">
       <div class="img-wrapper">
-        <img src="assets/tradfest3.jpg" class="artist-img" alt="MR.X">
+        <img src="assets/pesta5.jpg" class="artist-img" alt="MR.X">
     <span class="play-btn"><i class="bi bi-play-fill"></i></span>
       </div>
-      <p class="artist-text">Kecak<br>FTI FEST 25<br>29 Juli</p>
+      <p class="artist-text">SAHNO<br>FTI FEST 25<br>11 Maret</p>
+    </div>
+    <div class="card-artist text-center">
+      <div class="img-wrapper">
+        <img src="assets/pesta5.jpg" class="artist-img" alt="MR.X">
+    <span class="play-btn"><i class="bi bi-play-fill"></i></span>
+      </div>
+      <p class="artist-text">SAHNO<br>FTI FEST 25<br>11 Maret</p>
+    </div>
+    <div class="card-artist text-center">
+      <div class="img-wrapper">
+        <img src="assets/pesta6.jpg" class="artist-img" alt="MR.X">
+    <span class="play-btn"><i class="bi bi-play-fill"></i></span>
+      </div>
+      
+      <p class="artist-text">KANO<br>FTI FEST 25<br>29 Juli</p>
     </div>
 
    </div>
   </div>
  </div>
-
-
-
 
 
     <!-- FOOTER -->
