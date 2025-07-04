@@ -10,17 +10,24 @@ html, body {
   overflow-x: hidden; /* cegah scroll horizontal */
 }
 
+/* ================= FOOTER ================= */
 footer.footer {
   position: relative;
-  width: 100vw;          /* penuh viewport lebar */
+  width: 100vw;
   left: 50%;
   right: 50%;
-  margin-left: -50vw;    /* offset supaya melebar ke kiri */
-  margin-right: -50vw;   /* offset supaya melebar ke kanan */
+  margin-top: auto;
+  margin-left: -50vw;
+  margin-right: -50vw;
   background: rgba(0, 0, 50, 0.7);
   padding: 1.5rem 0;
   text-align: center;
   box-sizing: border-box;
+  }
+.social-icons i {
+  color: white;
+  font-size: 1.5rem;
+  margin: 0 8px;
 }
 
 .navbar-brand{
